@@ -1,11 +1,9 @@
 package rabbitnote.workqueue;
 
-import java.awt.datatransfer.StringSelection;
 import java.io.IOException;
 import java.util.Random;
 import java.util.concurrent.TimeoutException;
 
-import com.rabbitmq.client.BasicProperties;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
