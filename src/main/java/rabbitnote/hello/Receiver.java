@@ -1,7 +1,6 @@
 package rabbitnote.hello;
 
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.concurrent.TimeoutException;
 
 import com.rabbitmq.client.AMQP;
@@ -34,6 +33,6 @@ public class Receiver {
         };
         
 //        Boolean autoAck = false;
-        channel.basicConsume(QUEUE, false, "", false, false, null, consumer);
+        channel.basicConsume(QUEUE, true, "", false, false, null, consumer);
     }
 }
