@@ -1,6 +1,7 @@
 package rabbitnote.route;
 
 import java.io.IOException;
+import java.util.Random;
 import java.util.concurrent.TimeoutException;
 
 import com.rabbitmq.client.AMQP;
@@ -32,6 +33,7 @@ public class LogReceiverDirect {
         } else {
             System.exit(1);
         }
+
 
         channel.queueBind(queueName, exchange, routekey);
         System.out.println("queue:"+ queueName);
